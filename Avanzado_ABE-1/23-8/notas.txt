@@ -1,0 +1,6 @@
+posicionamiento CSS
+
+box model
+
+prop padding
+border

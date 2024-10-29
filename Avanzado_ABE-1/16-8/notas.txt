@@ -1,0 +1,31 @@
+Notas clase 16/8
+
+Documentacion oficial desarrollo WEB:
+developer.mozilla.org/
+
+Documentacion mas didactica:
+w3schools.com/
+
+Documentacion de TIC:
+cheatsheets-nv.vercel.app/
+
+Edit: https://docs.emmet.io/cheat-sheet/
+
+TAGS HTML
+
+HTML Semantic TAGS
+
+<article>
+<aside>
+<footer>
+<header>
+<main>
+<nav>
+<section>
+
+Estructura HTML con tgas semanticos
+
+referencias de esta clase
+https://www.w3schools.com/TAGS/default.asp
+https://www.w3schools.com/html/html5_semantic_elements.asp
+https://www.w3schools.com/tags/ref_colornames.asp

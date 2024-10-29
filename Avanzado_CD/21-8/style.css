@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.cajita{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 251, 0);
+    padding: 20px;
+    border: 5px solid black;
+}

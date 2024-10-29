@@ -1,0 +1,34 @@
+vs code
+extensiones para web
+
+Documentacion oficial desarrollo WEB:
+developer.mozilla.org/
+
+Documentacion mas didactica:
+w3schools.com/
+
+Documentacion de TIC:
+cheatsheets-nv.vercel.app/
+
+Cheat Sheet
+https://docs.emmet.io/cheat-sheet/
+
+
+HTML Semantic Tags
+
+<article>
+<aside>
+<footer>
+<header>
+<main>
+<nav>
+<section>
+
+Estructura de un sitio web con Semantic Tags
+
+referencias de esta clase
+https://www.w3schools.com/TAGS/default.asp
+https://www.w3schools.com/html/html5_semantic_elements.asp
+https://www.w3schools.com/tags/ref_colornames.asp
+
+Formas de escribir estilos

@@ -1,0 +1,11 @@
+javascripttutorial.net/javascript-dom/
+
+repasamos DOM
+repasamos JS selectores
+
+textContent
+innerHTML
++=
+
+forEach
+alert()

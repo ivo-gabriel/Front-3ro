@@ -1,0 +1,9 @@
+javascripttutorial.net/javascript-dom/
+
+repaso selectores
+
+forEach
+
+textContent
+innerHTML
++=

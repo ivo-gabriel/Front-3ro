@@ -1,0 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
+.container{
+    color: white;
+    font-size: 2em;
+
+    border-color: peru;
+
+    display: flex;
+    flex-direction: row;
+
+    /* flex-wrap: wrap; */
+
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cajita{
+    background-color: rgb(20, 200, 180);
+    color: rgb(189, 0, 0);
+    border: 2px solid  white;
+    text-align: center;
+    /* margin: 5px; */
+
+    background-color: rgba(80,80,200,1);
+
+    flex: 1;
+    
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}

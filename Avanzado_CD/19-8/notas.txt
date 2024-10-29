@@ -1,0 +1,22 @@
+selectores
+
+-elemento
+-clase
+-id
+-pseudoclases
+-combinadores
+
+props basicas
+
+color
+background-color
+border
+border-style
+
+posicionamiento
+
+static
+relative
+fixed
+absolute
+sticky

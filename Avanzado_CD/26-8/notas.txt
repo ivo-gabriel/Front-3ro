@@ -1,0 +1,16 @@
+Display:
+none, block, inline, flex
+
+flexbox:
+flex:direction, justify-content, align-items, flox, order
+
+colores:
+nombre, hexa, rgb, y agregar alpha al rgb y hexa
+
+tipografias:
+como importar una tipo descargada, como importar una de google fonts
+
+font-family
+font-weight
+font-size
+font-style

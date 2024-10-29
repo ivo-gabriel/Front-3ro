@@ -1,0 +1,13 @@
+javascripttutorial.net/javascript-dom/
+
+repaso selectores JS
+Repaso de que es el DOM (se los mostre desde la consola)
+
+textContent
+innerHTML
+
+introducir variables en el innerHTML
+
+forEach
+
++= en el innerHTML

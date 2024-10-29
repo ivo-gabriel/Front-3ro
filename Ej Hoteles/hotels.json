@@ -1,0 +1,502 @@
+[
+    {
+        "id": "1",
+        "name": "Hotel Central",
+        "location": "New York",
+        "stars": 5,
+        "roomsLeft": 3,
+        "roomType": "Suite",
+        "availableDate": "2024-11-01",
+        "price": 300
+    },
+    {
+        "id": "2",
+        "name": "Seaside Resort",
+        "location": "Miami",
+        "stars": 4,
+        "roomsLeft": 5,
+        "roomType": "Deluxe",
+        "availableDate": "2024-12-15",
+        "price": 200
+    },
+    {
+        "id": "3",
+        "name": "Mountain Escape",
+        "location": "Denver",
+        "stars": 3,
+        "roomsLeft": 2,
+        "roomType": "Standard",
+        "availableDate": "2024-11-20",
+        "price": 150
+    },
+    {
+        "id": "4",
+        "name": "Beach Paradise",
+        "location": "Los Angeles",
+        "stars": 4,
+        "roomsLeft": 0,
+        "roomType": "Family Suite",
+        "availableDate": "2024-10-30",
+        "price": 250
+    },
+    {
+        "id": "5",
+        "name": "City Lights Hotel",
+        "location": "Chicago",
+        "stars": 3,
+        "roomsLeft": 4,
+        "roomType": "Economy",
+        "availableDate": "2024-11-05",
+        "price": 120
+    },
+    {
+        "id": "6",
+        "name": "Tropical Haven",
+        "location": "Cancún",
+        "stars": 5,
+        "roomsLeft": 10,
+        "roomType": "Villa",
+        "availableDate": "2024-12-10",
+        "price": 450
+    },
+    {
+        "id": "7",
+        "name": "Desert Oasis",
+        "location": "Las Vegas",
+        "stars": 4,
+        "roomsLeft": 6,
+        "roomType": "Luxury Suite",
+        "availableDate": "2024-11-12",
+        "price": 400
+    },
+    {
+        "id": "8",
+        "name": "Hilltop Retreat",
+        "location": "Aspen",
+        "stars": 5,
+        "roomsLeft": 2,
+        "roomType": "Mountain View",
+        "availableDate": "2024-11-25",
+        "price": 350
+    },
+    {
+        "id": "9",
+        "name": "Historic Inn",
+        "location": "Philadelphia",
+        "stars": 3,
+        "roomsLeft": 5,
+        "roomType": "Queen",
+        "availableDate": "2024-11-10",
+        "price": 180
+    },
+    {
+        "id": "10",
+        "name": "Riverside Lodge",
+        "location": "Portland",
+        "stars": 4,
+        "roomsLeft": 3,
+        "roomType": "Cottage",
+        "availableDate": "2024-12-01",
+        "price": 220
+    },
+    {
+        "id": "11",
+        "name": "Sunny Coast Hotel",
+        "location": "San Diego",
+        "stars": 5,
+        "roomsLeft": 8,
+        "roomType": "Ocean View",
+        "availableDate": "2024-11-15",
+        "price": 400
+    },
+    {
+        "id": "12",
+        "name": "Garden View Hotel",
+        "location": "Seattle",
+        "stars": 3,
+        "roomsLeft": 7,
+        "roomType": "Standard",
+        "availableDate": "2024-10-20",
+        "price": 140
+    },
+    {
+        "id": "13",
+        "name": "Urban Chic Hotel",
+        "location": "Toronto",
+        "stars": 4,
+        "roomsLeft": 3,
+        "roomType": "Loft",
+        "availableDate": "2024-11-18",
+        "price": 250
+    },
+    {
+        "id": "14",
+        "name": "Cozy Cottage",
+        "location": "Nashville",
+        "stars": 3,
+        "roomsLeft": 5,
+        "roomType": "Cabin",
+        "availableDate": "2024-11-25",
+        "price": 160
+    },
+    {
+        "id": "15",
+        "name": "Luxury Spa Hotel",
+        "location": "Orlando",
+        "stars": 5,
+        "roomsLeft": 2,
+        "roomType": "Spa Suite",
+        "availableDate": "2024-12-05",
+        "price": 500
+    },
+    {
+        "id": "16",
+        "name": "Countryside Inn",
+        "location": "Austin",
+        "stars": 4,
+        "roomsLeft": 6,
+        "roomType": "Farmhouse",
+        "availableDate": "2024-10-30",
+        "price": 200
+    },
+    {
+        "id": "17",
+        "name": "Skyline Hotel",
+        "location": "San Francisco",
+        "stars": 5,
+        "roomsLeft": 3,
+        "roomType": "Penthouse",
+        "availableDate": "2024-11-20",
+        "price": 600
+    },
+    {
+        "id": "18",
+        "name": "Ocean Breeze Inn",
+        "location": "Virginia Beach",
+        "stars": 4,
+        "roomsLeft": 4,
+        "roomType": "Ocean Front",
+        "availableDate": "2024-11-15",
+        "price": 250
+    },
+    {
+        "id": "19",
+        "name": "Peaceful Valley Hotel",
+        "location": "Salt Lake City",
+        "stars": 3,
+        "roomsLeft": 5,
+        "roomType": "Standard",
+        "availableDate": "2024-11-01",
+        "price": 150
+    },
+    {
+        "id": "20",
+        "name": "Downtown Hub",
+        "location": "Boston",
+        "stars": 4,
+        "roomsLeft": 3,
+        "roomType": "Business Suite",
+        "availableDate": "2024-12-10",
+        "price": 300
+    },
+    {
+        "id": "21",
+        "name": "Festival Hotel",
+        "location": "New Orleans",
+        "stars": 5,
+        "roomsLeft": 5,
+        "roomType": "Luxury",
+        "availableDate": "2024-11-30",
+        "price": 450
+    },
+    {
+        "id": "22",
+        "name": "Eco-Friendly Hotel",
+        "location": "Boulder",
+        "stars": 3,
+        "roomsLeft": 7,
+        "roomType": "Standard",
+        "availableDate": "2024-11-22",
+        "price": 140
+    },
+    {
+        "id": "23",
+        "name": "Waterfront Resort",
+        "location": "Seattle",
+        "stars": 4,
+        "roomsLeft": 2,
+        "roomType": "Suite",
+        "availableDate": "2024-12-15",
+        "price": 280
+    },
+    {
+        "id": "24",
+        "name": "Heritage Hotel",
+        "location": "Washington D.C.",
+        "stars": 5,
+        "roomsLeft": 1,
+        "roomType": "Executive Suite",
+        "availableDate": "2024-11-12",
+        "price": 400
+    },
+    {
+        "id": "25",
+        "name": "Charming B&B",
+        "location": "Savannah",
+        "stars": 4,
+        "roomsLeft": 6,
+        "roomType": "Double",
+        "availableDate": "2024-11-18",
+        "price": 180
+    },
+    {
+        "id": "26",
+        "name": "Luxury Waterfront",
+        "location": "Miami",
+        "stars": 5,
+        "roomsLeft": 2,
+        "roomType": "Ocean View",
+        "availableDate": "2024-10-25",
+        "price": 520
+    },
+    {
+        "id": "27",
+        "name": "Bayside Hotel",
+        "location": "San Francisco",
+        "stars": 3,
+        "roomsLeft": 4,
+        "roomType": "Standard",
+        "availableDate": "2024-11-03",
+        "price": 160
+    },
+    {
+        "id": "28",
+        "name": "Misty Mountain Lodge",
+        "location": "Vermont",
+        "stars": 4,
+        "roomsLeft": 3,
+        "roomType": "Cabin",
+        "availableDate": "2024-12-01",
+        "price": 250
+    },
+    {
+        "id": "29",
+        "name": "Sunset Hotel",
+        "location": "Los Angeles",
+        "stars": 5,
+        "roomsLeft": 8,
+        "roomType": "Luxury Suite",
+        "availableDate": "2024-11-28",
+        "price": 450
+    },
+    {
+        "id": "30",
+        "name": "Island Paradise",
+        "location": "Bahamas",
+        "stars": 5,
+        "roomsLeft": 10,
+        "roomType": "Beachfront",
+        "availableDate": "2024-12-20",
+        "price": 600
+    },
+    {
+        "id": "31",
+        "name": "Gulf View Resort",
+        "location": "Galveston",
+        "stars": 4,
+        "roomsLeft": 6,
+        "roomType": "Suite",
+        "availableDate": "2024-10-15",
+        "price": 300
+    },
+    {
+        "id": "32",
+        "name": "Royal Palace Hotel",
+        "location": "London",
+        "stars": 5,
+        "roomsLeft": 1,
+        "roomType": "King Suite",
+        "availableDate": "2024-11-30",
+        "price": 800
+    },
+    {
+        "id": "33",
+        "name": "Shady Grove Inn",
+        "location": "Philadelphia",
+        "stars": 3,
+        "roomsLeft": 4,
+        "roomType": "Standard",
+        "availableDate": "2024-12-01",
+        "price": 140
+    },
+    {
+        "id": "34",
+        "name": "City Center Hotel",
+        "location": "Toronto",
+        "stars": 4,
+        "roomsLeft": 3,
+        "roomType": "Business",
+        "availableDate": "2024-10-10",
+        "price": 250
+    },
+    {
+        "id": "35",
+        "name": "Lakeview Lodge",
+        "location": "Michigan",
+        "stars": 4,
+        "roomsLeft": 2,
+        "roomType": "Suite",
+        "availableDate": "2024-11-25",
+        "price": 320
+    },
+    {
+        "id": "36",
+        "name": "Rustic Retreat",
+        "location": "Colorado Springs",
+        "stars": 3,
+        "roomsLeft": 5,
+        "roomType": "Standard",
+        "availableDate": "2024-11-12",
+        "price": 150
+    },
+    {
+        "id": "37",
+        "name": "Artisan Hotel",
+        "location": "New Orleans",
+        "stars": 4,
+        "roomsLeft": 3,
+        "roomType": "Suite",
+        "availableDate": "2024-11-15",
+        "price": 280
+    },
+    {
+        "id": "38",
+        "name": "Coastal Escape",
+        "location": "Myrtle Beach",
+        "stars": 5,
+        "roomsLeft": 7,
+        "roomType": "Luxury",
+        "availableDate": "2024-12-10",
+        "price": 520
+    },
+    {
+        "id": "39",
+        "name": "Cultural Heritage Hotel",
+        "location": "Mexico City",
+        "stars": 4,
+        "roomsLeft": 4,
+        "roomType": "Luxury Suite",
+        "availableDate": "2024-11-20",
+        "price": 300
+    },
+    {
+        "id": "40",
+        "name": "Grand View Inn",
+        "location": "Denver",
+        "stars": 5,
+        "roomsLeft": 3,
+        "roomType": "Penthouse",
+        "availableDate": "2024-11-10",
+        "price": 650
+    },
+    {
+        "id": "41",
+        "name": "Safari Lodge",
+        "location": "Nairobi",
+        "stars": 4,
+        "roomsLeft": 2,
+        "roomType": "Luxury Tent",
+        "availableDate": "2024-12-05",
+        "price": 400
+    },
+    {
+        "id": "42",
+        "name": "Golden Sands Hotel",
+        "location": "Malibu",
+        "stars": 5,
+        "roomsLeft": 5,
+        "roomType": "Ocean Front",
+        "availableDate": "2024-11-25",
+        "price": 700
+    },
+    {
+        "id": "43",
+        "name": "Friendly Stay Inn",
+        "location": "Dallas",
+        "stars": 3,
+        "roomsLeft": 6,
+        "roomType": "Economy",
+        "availableDate": "2024-10-15",
+        "price": 110
+    },
+    {
+        "id": "44",
+        "name": "Vibrant City Hotel",
+        "location": "Chicago",
+        "stars": 4,
+        "roomsLeft": 4,
+        "roomType": "Standard",
+        "availableDate": "2024-11-05",
+        "price": 220
+    },
+    {
+        "id": "45",
+        "name": "Heritage House",
+        "location": "Savannah",
+        "stars": 5,
+        "roomsLeft": 1,
+        "roomType": "Luxury Suite",
+        "availableDate": "2024-11-15",
+        "price": 500
+    },
+    {
+        "id": "46",
+        "name": "Crystal Lake Resort",
+        "location": "Minnesota",
+        "stars": 4,
+        "roomsLeft": 3,
+        "roomType": "Suite",
+        "availableDate": "2024-12-12",
+        "price": 300
+    },
+    {
+        "id": "47",
+        "name": "Sunnyhill Hotel",
+        "location": "San Diego",
+        "stars": 3,
+        "roomsLeft": 8,
+        "roomType": "Standard",
+        "availableDate": "2024-10-10",
+        "price": 120
+    },
+    {
+        "id": "48",
+        "name": "Mountain Top Lodge",
+        "location": "Aspen",
+        "stars": 5,
+        "roomsLeft": 1,
+        "roomType": "Deluxe",
+        "availableDate": "2024-11-25",
+        "price": 700
+    },
+    {
+        "id": "49",
+        "name": "Oceanic Hotel",
+        "location": "Miami",
+        "stars": 4,
+        "roomsLeft": 2,
+        "roomType": "Family Suite",
+        "availableDate": "2024-12-01",
+        "price": 300
+    },
+    {
+        "id": "50",
+        "name": "Starry Nights Hotel",
+        "location": "Las Vegas",
+        "stars": 3,
+        "roomsLeft": 5,
+        "roomType": "Standard",
+        "availableDate": "2024-11-15",
+        "price": 130
+    }
+]

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comidas Argentinas</title> 
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <section class="filterContainer">
+        <label for="filtroCategoria">Categoría:</label>
+        <select id="filtroCategoria">
+            <option value="">Todas</option>
+            <option value="Parrilla">Parrilla</option>
+            <option value="Postre">Postre</option>
+            <option value="Guiso">Guiso</option>
+            <option value="Horno">Horno</option>
+            <option value="Frito">Frito</option>
+            <option value="Salteado">Salteado</option>
+            <option value="Ensalada">Ensalada</option>
+            <option value="Pasta">Pasta</option>
+            <option value="Panadería">Panadería</option>
+        </select>
+    
+        <label for="filtroProvincia">Provincia:</label>
+        <select id="filtroProvincia">
+            <option value="">Todas</option>
+            <option value="Buenos Aires">Buenos Aires</option>
+            <option value="Mendoza">Mendoza</option>
+            <option value="Córdoba">Córdoba</option>
+            <option value="Tucumán">Tucumán</option>
+            <option value="Salta">Salta</option>
+            <option value="Jujuy">Jujuy</option>
+            <option value="Santa Fe">Santa Fe</option>
+            <option value="Entre Ríos">Entre Ríos</option>
+            <option value="Patagonia">Patagonia</option>
+            <option value="Corrientes">Corrientes</option>
+            <option value="Formosa">Formosa</option>
+            <option value="La Pampa">La Pampa</option>
+        </select>
+
+        <input type="text" id="searchBar" placeholder="Escribe para buscar">
+    </section>
+
+    <main class="comida-container" id="comidaContainer"></main>     
+    
+    <section class="formContainer">
+        <h1>Agregar Comidas a la Lista</h1>
+    
+        <!-- Formulario para agregar comidas -->
+        <form id="comidaForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+            
+            <label for="categoria">Categoría:</label>
+            <input type="text" id="categoria" required>
+            
+            <label for="provincia">Provincia:</label>
+            <input type="text" id="provincia" required>
+            
+            <label for="ingredientes">Ingredientes (separados por comas):</label>
+            <input type="text" id="ingredientes" required>
+            
+            <button type="submit">Agregar Comida</button>
+        </form>
+    </section>
+
+    <script type="module" src="./comidas.js"></script>
+</body>
+</html>

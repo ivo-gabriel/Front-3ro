@@ -1,0 +1,7 @@
+repaso de etiquetas html semanticas
+
+selectores basicos:
+elemento, clase y id
+
+pseudoclases Y 
+combinadores

@@ -1,0 +1,61 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gray;
+}
+
+main{
+    display: block;
+}
+
+section{
+    width: 300px;
+    height: 100px;
+    margin: 1em;
+    background-color: lime;
+    border-right: 8px solid black;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    background-color: lightblue;
+}
+
+.logo:hover{
+    background-color: fuchsia;
+}
+
+.content4 div{
+    background-color: navy;
+}
+
+#avatar{
+    background-color: red;
+}
+
+#avatar:hover{
+    background-color: black;
+}
+
+section:nth-child(1){
+    background-color: gold;
+}
+
+section:nth-child(2){
+    background-color: silver;
+}
+
+section:nth-child(3){
+    background-color: brown;
+    border: none;
+}
+
+section div{
+    border: 5px solid fuchsia;
+}

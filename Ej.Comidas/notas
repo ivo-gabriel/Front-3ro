@@ -1,0 +1,124 @@
+<section class="filterContainer">
+        <label for="filtroCategoria">Categoría:</label>
+        <select id="filtroCategoria">
+            <option value="">Todas</option>
+            <option value="Parrilla">Parrilla</option>
+            <option value="Postre">Postre</option>
+            <option value="Guiso">Guiso</option>
+            <!-- Agrega más categorías según sea necesario -->
+        </select>
+    
+        <label for="filtroProvincia">Provincia:</label>
+        <select id="filtroProvincia">
+            <option value="">Todas</option>
+            <option value="Buenos Aires">Buenos Aires</option>
+            <option value="Mendoza">Mendoza</option>
+            <option value="Córdoba">Córdoba</option>
+            <!-- Agrega más provincias según sea necesario -->
+        </select>
+    </section>
+
+// Referencias a los selectores de filtros
+const filtroCategoria = document.getElementById('filtroCategoria');
+const filtroProvincia = document.getElementById('filtroProvincia');
+
+// Función para filtrar y mostrar comidas según los selectores
+function aplicarFiltros() {
+  const categoriaSeleccionada = filtroCategoria.value;
+  const provinciaSeleccionada = filtroProvincia.value;
+
+  const comidasFiltradas = comidas.filter(comida => {
+    const coincideCategoria = categoriaSeleccionada === '' || comida.categoria === categoriaSeleccionada;
+    const coincideProvincia = provinciaSeleccionada === '' || comida.provincia === provinciaSeleccionada;
+    return coincideCategoria && coincideProvincia;
+  });
+
+  // Mostrar solo las comidas filtradas
+  container.innerHTML = '';
+  comidasFiltradas.forEach(comida => {
+    // Reutiliza la lógica de crear tarjetas para cada comida
+    const card = document.createElement('div');
+    card.classList.add('card');
+
+    const nombre = document.createElement('h3');
+    nombre.textContent = comida.nombre;
+    card.appendChild(nombre);
+
+    const categoria = document.createElement('span');
+    categoria.classList.add('categoria');
+    categoria.textContent = comida.categoria;
+    card.appendChild(categoria);
+
+    const provincia = document.createElement('p');
+    provincia.textContent = `Provincia: ${comida.provincia}`;
+    card.appendChild(provincia);
+
+    const ingredientes = document.createElement('div');
+    ingredientes.classList.add('ingredientes');
+    const ingredientesTitle = document.createElement('p');
+    ingredientesTitle.textContent = 'Ingredientes:';
+    ingredientes.appendChild(ingredientesTitle);
+
+    comida.ingredientes.forEach(ingrediente => {
+      const ingredienteSpan = document.createElement('span');
+      ingredienteSpan.textContent = ingrediente;
+      ingredientes.appendChild(ingredienteSpan);
+    });
+
+    card.appendChild(ingredientes);
+    container.appendChild(card);
+  });
+}
+
+// Agregar eventos para que los filtros se apliquen al cambiar
+filtroCategoria.addEventListener('change', aplicarFiltros);
+filtroProvincia.addEventListener('change', aplicarFiltros);
+
+<div class="formContainer">
+        <h1>Agregar Comidas a la Lista</h1>
+    
+        <!-- Formulario para agregar comidas -->
+        <form id="comidaForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+            
+            <label for="categoria">Categoría:</label>
+            <input type="text" id="categoria" required>
+            
+            <label for="provincia">Provincia:</label>
+            <input type="text" id="provincia" required>
+            
+            <label for="ingredientes">Ingredientes (separados por comas):</label>
+            <input type="text" id="ingredientes" required>
+            
+            <button type="submit">Agregar Comida</button>
+        </form>
+    </div>
+
+    // Evento para agregar comida con el formulario
+document.getElementById('comidaForm').addEventListener('submit', function (event) {
+  event.preventDefault();
+
+  const nombre = document.getElementById('nombre').value;
+  const categoria = document.getElementById('categoria').value;
+  const provincia = document.getElementById('provincia').value;
+  const ingredientes = document.getElementById('ingredientes').value.split(',').map(ing => ing.trim());
+
+  // Crear nueva comida
+  const nuevaComida = {
+    nombre,
+    categoria,
+    provincia,
+    ingredientes
+  };
+
+  // Agregar la nueva comida a la lista
+  comidas.push(nuevaComida);
+
+  // Limpiar el formulario
+  document.getElementById('comidaForm').reset();
+
+  // Actualizar la visualización de comidas
+  mostrarComidas();
+});
+

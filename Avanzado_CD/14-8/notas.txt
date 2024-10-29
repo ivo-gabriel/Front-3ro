@@ -1,0 +1,36 @@
+NOTAS CLASE 14/8
+
+Documentacion oficial desarrollo WEB:
+developer.mozilla.org/
+
+Documentacion mas didactica:
+w3schools.com/
+
+Documentacion de TIC:
+cheatsheets-nv.vercel.app/
+
+Cheat Sheet
+https://docs.emmet.io/cheat-sheet/
+
+TAGS HTML
+
+BODY
+
+HTML Semantic Elements
+
+<article>
+<aside>
+<footer>
+<header>
+<main>
+<nav>
+<section>
+
+
+Arquitectura de un sitio WEB
+formas de escribir estilos
+
+referencias de esta clase
+https://www.w3schools.com/TAGS/default.asp
+https://www.w3schools.com/html/html5_semantic_elements.asp
+https://www.w3schools.com/tags/ref_colornames.asp
