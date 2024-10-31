@@ -59,6 +59,12 @@ function mostrarComidas(lista){
     // Agregar la tarjeta al contenedor
     container.appendChild(card);
   });
+
+  const card = document.createElement('div');
+  card.id = "addBtn";
+  card.textContent = "+ Añadir comida";
+  card.classList.add('card');
+  container.appendChild(card);
   
 }
 
