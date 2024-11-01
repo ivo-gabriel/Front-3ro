@@ -61,40 +61,41 @@ function mostrarComidas(lista){
   });
 
   const card = document.createElement('div');
-  card.id = "addBtn";
+  card.id = "add-food-btn";
   card.textContent = "+ Añadir comida";
   card.classList.add('card');
+
   container.appendChild(card);
   
 }
 
-// Evento para agregar comida con el formulario
-document.getElementById('comidaForm').addEventListener('submit', function (event) {
-  event.preventDefault();
+// // Evento para agregar comida con el formulario
+// document.getElementById('comidaForm').addEventListener('submit', function (event) {
+//   event.preventDefault();
 
-  const nombre = document.getElementById('nombre').value;
-  const categoria = document.getElementById('categoria').value;
-  const provincia = document.getElementById('provincia').value;
-  const ingredientes = document.getElementById('ingredientes')
-                        .value.split(',').map(ing => ing.trim());
+//   const nombre = document.getElementById('nombre').value;
+//   const categoria = document.getElementById('categoria').value;
+//   const provincia = document.getElementById('provincia').value;
+//   const ingredientes = document.getElementById('ingredientes')
+//                         .value.split(',').map(ing => ing.trim());
 
-  // Crear nueva comida
-  const nuevaComida = {
-    nombre,
-    categoria,
-    provincia,
-    ingredientes
-  };
+//   // Crear nueva comida
+//   const nuevaComida = {
+//     nombre,
+//     categoria,
+//     provincia,
+//     ingredientes
+//   };
 
-  // Agregar la nueva comida a la lista
-  comidas.push(nuevaComida);
+//   // Agregar la nueva comida a la lista
+//   comidas.push(nuevaComida);
 
-  // Limpiar el formulario
-  document.getElementById('comidaForm').reset();
+//   // Limpiar el formulario
+//   document.getElementById('comidaForm').reset();
 
-  // Actualizar la visualización de comidas
-  mostrarComidas(comidas);
-});
+//   // Actualizar la visualización de comidas
+//   mostrarComidas(comidas);
+// });
 
 // Referencias a los selectores de filtros
 const filtroCategoria = document.getElementById('filtroCategoria');
@@ -119,14 +120,3 @@ function aplicarFiltros() {
 // Agregar eventos para que los filtros se apliquen al cambiar
 filtroCategoria.addEventListener('change', aplicarFiltros);
 filtroProvincia.addEventListener('change', aplicarFiltros);
-
-// Filtrar comidas por nombre o ubicación
-searchBar.addEventListener('input', () => {
-  const searchTerm = searchBar.value.toLowerCase();
-  const filteredFoods = comidas.filter(comida => 
-    comida.nombre.toLowerCase().includes(searchTerm) ||
-    comida.categoria.toLowerCase().includes(searchTerm) ||
-    comida.provincia.toLowerCase().includes(searchTerm)
-  );
-  mostrarComidas(filteredFoods);
-});
