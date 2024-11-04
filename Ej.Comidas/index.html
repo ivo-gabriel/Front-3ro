@@ -43,29 +43,34 @@
     </section>
 
     <main class="comida-container" id="comidaContainer">
-        <div class="card">+ Añadir Comida</div>
     </main>     
     
-    <section class="formContainer">
-        <h1>Agregar Comidas a la Lista</h1>
-    
-        <!-- Formulario para agregar comidas -->
-        <form id="comidaForm">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" required>
+    <dialog id="modal">
+        <section class="formContainer">
+
+            <h1>Agregar Comidas a la Lista</h1>
             
-            <label for="categoria">Categoría:</label>
-            <input type="text" id="categoria" required>
-            
-            <label for="provincia">Provincia:</label>
-            <input type="text" id="provincia" required>
-            
-            <label for="ingredientes">Ingredientes (separados por comas):</label>
-            <input type="text" id="ingredientes" required>
-            
-            <button type="submit">Agregar Comida</button>
-        </form>
-    </section>
+            <!-- Formulario para agregar comidas -->
+            <form id="comidaForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+                
+                <label for="categoria">Categoría:</label>
+                <input type="text" id="categoria" required>
+                
+                <label for="provincia">Provincia:</label>
+                <input type="text" id="provincia" required>
+                
+                <label for="ingredientes">Ingredientes (separados por comas):</label>
+                <input type="text" id="ingredientes" required>
+                
+                <button type="submit">Agregar Comida</button>
+                <button id="close-modal">Cancelar</button>
+            </form>
+        </section>
+    </dialog>
+
+    <button id="open-modal">Agregar comida</button>
 
     <script type="module" src="./comidas.js"></script>
 </body>

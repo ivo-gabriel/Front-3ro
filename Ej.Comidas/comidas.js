@@ -1,3 +1,7 @@
+/*
+    Cargar comidas en memoria desde el JSON
+*/
+
 fetch('./data/comidas.json')  // Si está en la carpeta "static" de un proyecto Flask
   .then(response => response.json())  // Convertir la respuesta en JSON
   .then(data => {
@@ -9,6 +13,9 @@ fetch('./data/comidas.json')  // Si está en la carpeta "static" de un proyecto 
     console.error('Error al leer el archivo JSON:', error);
   });
 
+/*
+    Mostrar comidas en memoria
+*/
 const varCont = document.querySelector(".contenedor");
 
 //let comidas50 = JSON.parse(fs.readFileSync("./data/comidas.json", "utf8"));
@@ -60,46 +67,73 @@ function mostrarComidas(lista){
     container.appendChild(card);
   });
 
-  const card = document.createElement('div');
-  card.id = "add-food-btn";
-  card.textContent = "+ Añadir comida";
-  card.classList.add('card');
+  // const card = document.createElement('div');
+  // card.id = "add-food-btn";
+  // card.textContent = "+ Añadir comida";
+  // card.classList.add('card');
 
-  container.appendChild(card);
+  // container.appendChild(card);
   
 }
 
-// // Evento para agregar comida con el formulario
-// document.getElementById('comidaForm').addEventListener('submit', function (event) {
-//   event.preventDefault();
+/*
+    Agregar comidas con un formulario
+*/
 
-//   const nombre = document.getElementById('nombre').value;
-//   const categoria = document.getElementById('categoria').value;
-//   const provincia = document.getElementById('provincia').value;
-//   const ingredientes = document.getElementById('ingredientes')
-//                         .value.split(',').map(ing => ing.trim());
+// Evento para agregar comida con el formulario
 
-//   // Crear nueva comida
-//   const nuevaComida = {
-//     nombre,
-//     categoria,
-//     provincia,
-//     ingredientes
-//   };
+const openModal = document.querySelector("#open-modal");
+const closeModal = document.querySelector("#close-modal");
+const modal = document.querySelector("#modal");
+const confirm = document.querySelector("#confirm");
 
-//   // Agregar la nueva comida a la lista
-//   comidas.push(nuevaComida);
+openModal.addEventListener("click", () => {
+  modal.showModal();
+});
 
-//   // Limpiar el formulario
-//   document.getElementById('comidaForm').reset();
+closeModal.addEventListener("click", () => {
+  modal.close();
+});
 
-//   // Actualizar la visualización de comidas
-//   mostrarComidas(comidas);
-// });
+document.getElementById('comidaForm').addEventListener('submit', function (event) {
+  event.preventDefault();
+
+  const nombre = document.getElementById('nombre').value;
+  const categoria = document.getElementById('categoria').value;
+  const provincia = document.getElementById('provincia').value;
+  const ingredientes = document.getElementById('ingredientes')
+                        .value.split(',').map(ing => ing.trim());
+
+  // Crear nueva comida
+  const nuevaComida = {
+    nombre,
+    categoria,
+    provincia,
+    ingredientes
+  };
+
+  // Agregar la nueva comida a la lista
+  comidas.push(nuevaComida);
+
+  // Limpiar el formulario
+  document.getElementById('comidaForm').reset();
+  modal.close();
+
+  // Actualizar la visualización de comidas
+  mostrarComidas(comidas);
+});
+
+/*
+    Filtros y busqueda
+*/
 
 // Referencias a los selectores de filtros
 const filtroCategoria = document.getElementById('filtroCategoria');
 const filtroProvincia = document.getElementById('filtroProvincia');
+
+// Agregar eventos para que los filtros se apliquen al cambiar
+filtroCategoria.addEventListener('change', aplicarFiltros);
+filtroProvincia.addEventListener('change', aplicarFiltros);
 
 // Función para filtrar y mostrar comidas según los selectores
 function aplicarFiltros() {
@@ -113,10 +147,16 @@ function aplicarFiltros() {
   });
 
   // Mostrar solo las comidas filtradas
-  container.innerHTML = '';
   mostrarComidas(comidasFiltradas);
 }
 
-// Agregar eventos para que los filtros se apliquen al cambiar
-filtroCategoria.addEventListener('change', aplicarFiltros);
-filtroProvincia.addEventListener('change', aplicarFiltros);
+// Filtrar comidas por nombre o ubicación
+searchBar.addEventListener('input', () => {
+  const searchTerm = searchBar.value.toLowerCase();
+  const filteredFoods = comidas.filter(comida => 
+    comida.nombre.toLowerCase().includes(searchTerm) ||
+    comida.categoria.toLowerCase().includes(searchTerm) ||
+    comida.provincia.toLowerCase().includes(searchTerm)
+  );
+  mostrarComidas(filteredFoods);
+});
