@@ -1,7 +1,6 @@
 /*
     Cargar comidas en memoria desde el JSON
 */
-
 fetch('./data/comidas.json')  // Si está en la carpeta "static" de un proyecto Flask
   .then(response => response.json())  // Convertir la respuesta en JSON
   .then(data => {
@@ -85,7 +84,6 @@ function mostrarComidas(lista){
 const openModal = document.querySelector("#open-modal");
 const closeModal = document.querySelector("#close-modal");
 const modal = document.querySelector("#modal");
-const confirm = document.querySelector("#confirm");
 
 openModal.addEventListener("click", () => {
   modal.showModal();
@@ -116,8 +114,8 @@ document.getElementById('comidaForm').addEventListener('submit', function (event
   comidas.push(nuevaComida);
 
   // Limpiar el formulario
-  document.getElementById('comidaForm').reset();
   modal.close();
+  document.getElementById('comidaForm').reset();
 
   // Actualizar la visualización de comidas
   mostrarComidas(comidas);
@@ -153,10 +151,11 @@ function aplicarFiltros() {
 // Filtrar comidas por nombre o ubicación
 searchBar.addEventListener('input', () => {
   const searchTerm = searchBar.value.toLowerCase();
-  const filteredFoods = comidas.filter(comida => 
+  const comidasFiltradas = comidas.filter(comida => 
     comida.nombre.toLowerCase().includes(searchTerm) ||
     comida.categoria.toLowerCase().includes(searchTerm) ||
     comida.provincia.toLowerCase().includes(searchTerm)
   );
-  mostrarComidas(filteredFoods);
+
+  mostrarComidas(comidasFiltradas);
 });

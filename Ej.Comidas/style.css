@@ -170,18 +170,15 @@ select option {
 
 #modal{
     background-color: #ddd;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 20px;
     border-radius: 20px;
     width: 24em;
-    height: 40em;
+    height: 32em;
     border: none;
     border-radius: 0.75em;
     padding: 0.5em;
     position: absolute;
-    translate: calc(50vw - 12em) calc(50vh - 19em);
+    translate: calc(50vw - 12em) calc(50vh - 16em);
 
     #close-modal{
         background-color: #555;
@@ -191,4 +188,12 @@ select option {
     &::backdrop{
         background-color: #222E;
     }
+}
+
+.formContainer{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

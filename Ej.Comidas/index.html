@@ -21,7 +21,7 @@
             <option value="Pasta">Pasta</option>
             <option value="Panadería">Panadería</option>
         </select>
-    
+        
         <label for="filtroProvincia">Provincia:</label>
         <select id="filtroProvincia">
             <option value="">Todas</option>
@@ -38,39 +38,41 @@
             <option value="Formosa">Formosa</option>
             <option value="La Pampa">La Pampa</option>
         </select>
-
+        
         <input type="text" id="searchBar" placeholder="Escribe para buscar">
     </section>
 
     <main class="comida-container" id="comidaContainer">
+        <!-- Contenido Dinamico -->
     </main>     
-    
-    <dialog id="modal">
-        <section class="formContainer">
 
-            <h1>Agregar Comidas a la Lista</h1>
-            
-            <!-- Formulario para agregar comidas -->
-            <form id="comidaForm">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" required>
+    <section class="addFood">
+        <dialog id="modal">
+            <div class="formContainer">    
+                <h1>Agregar Comidas a la Lista</h1>
                 
-                <label for="categoria">Categoría:</label>
-                <input type="text" id="categoria" required>
-                
-                <label for="provincia">Provincia:</label>
-                <input type="text" id="provincia" required>
-                
-                <label for="ingredientes">Ingredientes (separados por comas):</label>
-                <input type="text" id="ingredientes" required>
-                
-                <button type="submit">Agregar Comida</button>
-                <button id="close-modal">Cancelar</button>
-            </form>
-        </section>
-    </dialog>
-
-    <button id="open-modal">Agregar comida</button>
+                <!-- Formulario para agregar comidas -->
+                <form id="comidaForm">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" >
+                    
+                    <label for="categoria">Categoría:</label>
+                    <input type="text" id="categoria" >
+                    
+                    <label for="provincia">Provincia:</label>
+                    <input type="text" id="provincia" >
+                    
+                    <label for="ingredientes">Ingredientes (separados por comas):</label>
+                    <input type="text" id="ingredientes" >
+                    
+                    <button type="submit">Agregar Comida</button>
+                    <button type="button" id="close-modal">Cancelar</button>
+                </form>
+            </div>
+        </dialog>
+        
+        <button type="button" id="open-modal">Agregar comida</button>
+    </section>
 
     <script type="module" src="./comidas.js"></script>
 </body>
